@@ -1,0 +1,135 @@
+@font-face {
+  font-family: akkurat;
+  src: url(AkkuratPro-Regular.otf);
+}
+
+@font-face {
+  font-family: akkurat;
+  src: url(AkkuratPro-Bold.otf);
+  font-weight: bold;
+}
+
+div{
+    padding: 5px;
+    font-family: akkurat;
+}
+
+body{
+    margin: 20px
+}
+
+#submit_div{
+    margin-top: 10px;
+    
+}
+
+legend{
+  color: #bc65ff;
+  font-family: akkurat;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h6{
+  /* color: #3eb489; */
+  font-weight: 500;
+  font-family: akkurat;
+}
+
+/* input{
+    background-color: white;
+   color: black;
+   border: 1px solid #555555;
+   border-radius: 4px;
+} */
+
+label{
+   font-family: akkurat; 
+}
+
+input{
+  font-family: akkurat;
+  color: #bc65ff;
+   background: #fff;
+   border: 1px solid #bc65ff;
+   font-size: 17px;
+   padding: 7px 12px;
+   font-weight: normal;
+   margin-right: 17px;
+   display: inline-block;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   min-width: 120px;
+   /* margin-left: 15px; */
+}
+input:hover {
+    background-color: #bc65ff;
+    color: white;
+  }
+
+.square1 {
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(199,206,234);
+   border:1px solid black;
+ }
+
+.square2{
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(192,228,241);
+   border:1px solid black;
+ }
+
+.square3{
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(255,154,162);
+   border:1px solid black;
+ }
+
+.square4 {
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(226,240,203);
+   border:1px solid black;
+ }
+
+.square5 {
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(232,230,173);
+   border:1px solid black;
+ }
+
+.square6 {
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(177,177,177);
+   border:1px solid black;
+ }
+
+.square7 {
+   height: 30px;
+   width: 30px;
+   margin-left: 80px;
+   background-color: rgb(208,246,210);
+   border:1px solid black;
+
+ }
+
+ td{
+padding: 10px;
+ }
+
+#t{
+  margin-top: 30px;
+  color: #bc65ff;
+}
+

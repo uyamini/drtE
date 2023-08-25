@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            drtE suggestions
+        </title>
+        <style>
+            .heading-box{
+            background-color: white;
+            align-items: center;
+            padding-left: 500px;
+            float: center;
+            padding-right: 20px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            justify-content: space-between;
+            }
+            .lower{
+            background-color: white;
+            align-items: center;
+            padding-left: 500px;
+            float: center;
+            padding-right: 575px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 30px;
+            }
+            .prev{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .pn{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .next{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .fil{
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+            .p{
+                text-align: center;
+            }
+            table {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                align-self: center;
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            .tables{
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+            .content{
+                margin-top: 30px;
+                padding-top: 50px;
+            }
+            .split {
+                padding-top: 30px;
+                height: 80%;
+                width: 50%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                overflow-x: hidden;
+            }
+
+                /* Control the left side */
+            .left {
+                left: 0;
+                padding-top: 80px;
+            }
+
+                /* Control the right side */
+            .right {
+                padding-top: 80px;
+                right: 0;
+            }
+            .sb1{
+                padding-left: 50px;
+            }
+            .accept-btn{
+                padding-top: 450px;
+                padding-left: 650px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="suggestions-page">
+            <br>
+            <div class="heading-box">
+                <div class="prev">
+                    <a href="http://127.0.0.1:5000/">previous</a>
+                </div>
+                <div class="pn">
+                    <p id="page-no">Page x of y</p>
+                </div>
+                <div class="next">
+                    <a href="http://127.0.0.1:5000/">next</a> <!--change link-->
+                </div>
+                <div class="fil">
+                    <label for="filter">Filter by: </label>
+                    <select name="filter" id="f">
+                        <option value="blank"> --- </option>
+                        <option value="NA">NA Cells</option>
+                        <option value="IDT">Incorrect Data Type</option>
+                        <option value="MD">Missing Data</option>
+                        <option value="NO">Numerical Outliers</option>
+                        <option value="WC">Wrong Category</option>
+                        <option value="Typos">Typos</option>
+                        <option value="EmailC">Email Consistency</option>
+                    </select>
+                </div>                
+            </div>
+            <div class="content">
+                <div class="split left">
+                    <div class="tables">
+                        <table>
+                            <tr>
+                              <th>Name</th>
+                              <th>Age</th>
+                              <th>Nickname</th>
+                            </tr>
+                            <tr>
+                              <td>Marco</td>
+                              <td>38</td>
+                              <td color="red">(MISSING!)</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <br>
+                        <table>
+                            <tr>
+                              <th>Name</th>
+                              <th>Age</th>
+                              <th>Nickname</th>
+                            </tr>
+                            <tr>
+                              <td>Marco</td>
+                              <td>38</td>
+                              <td color="red">(MISSING!)</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <br>
+                        <table>
+                            <tr>
+                              <th>Name</th>
+                              <th>Age</th>
+                              <th>Nickname</th>
+                            </tr>
+                            <tr>
+                              <td>Marco</td>
+                              <td>38</td>
+                              <td color="red">(MISSING!)</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <br>
+                        <table>
+                            <tr>
+                              <th>Name</th>
+                              <th>Age</th>
+                              <th>Nickname</th>
+                            </tr>
+                            <tr>
+                              <td>Marco</td>
+                              <td>38</td>
+                              <td color="red">(MISSING!)</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="split right">
+                    <div class="sb1">
+                        <span class="ss1">
+                            <p id="suggested">Suggested: 35</p>
+                        </span>
+                        <span class="ss2">
+                            <label for="osw">Overwrite suggestion with :</label>
+                            <input type="text" id="osw" name="osw"><br>
+                        </span>
+                        <span class="ss3">
+                            <input type="checkbox" id="accept-suggestion" name="accept-suggestion" value="accept-suggestion">
+                            <label for="accept-suggestion"> Accept Suggestion</label>
+                        </span>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="sb1">
+                        <span class="ss1">
+                            <p id="suggested">Suggested: 35</p>
+                        </span>
+                        <span class="ss2">
+                            <label for="osw">Overwrite suggestion with :</label>
+                            <input type="text" id="osw" name="osw"><br>
+                        </span>
+                        <span class="ss3">
+                            <input type="checkbox" id="accept-suggestion" name="accept-suggestion" value="accept-suggestion">
+                            <label for="accept-suggestion"> Accept Suggestion</label>
+                        </span>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="sb1">
+                        <span class="ss1">
+                            <p id="suggested">Suggested: 35</p>
+                        </span>
+                        <span class="ss2">
+                            <label for="osw">Overwrite suggestion with :</label>
+                            <input type="text" id="osw" name="osw"><br>
+                        </span>
+                        <span class="ss3">
+                            <input type="checkbox" id="accept-suggestion" name="accept-suggestion" value="accept-suggestion">
+                            <label for="accept-suggestion"> Accept Suggestion</label>
+                        </span>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="sb1">
+                        <span class="ss1">
+                            <p id="suggested">Suggested: 35</p>
+                        </span>
+                        <span class="ss2">
+                            <label for="osw">Overwrite suggestion with :</label>
+                            <input type="text" id="osw" name="osw"><br>
+                        </span>
+                        <span class="ss3">
+                            <input type="checkbox" id="accept-suggestion" name="accept-suggestion" value="accept-suggestion">
+                            <label for="accept-suggestion"> Accept Suggestion</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="accept-btn">
+                    <button type="button">Accept All Suggestions</button>
+                </div>
+                <div class="lower">
+                    <div class="prev">
+                        <a href="http://127.0.0.1:5000/">previous</a>
+                    </div>
+                    <div class="pn">
+                        <p id="page-no">Page x of y</p>
+                    </div>
+                    <div class="next">
+                        <a href="http://127.0.0.1:5000/">next</a> <!--change link-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+
+</html>

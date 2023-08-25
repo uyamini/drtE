@@ -1,0 +1,184 @@
+@font-face {
+  font-family: akkurat;
+  src: url(AkkuratPro-Regular.otf);
+}
+
+@font-face {
+  font-family: akkurat;
+  src: url(AkkuratPro-Bold.otf);
+  font-weight: bold;
+}
+#config_div{
+   text-align: center; 
+   margin-top: 100px;
+   margin-bottom:50px;
+   font-family: akkurat;
+}
+
+img{
+   height: 165px;
+   width: 200px;
+}
+
+h5, h4, h3, td{
+  font-weight: 500;
+  font-family: akkurat;
+}
+
+th{
+  font-weight: 800;
+  font-family: akkurat;
+}
+
+h4, h3{
+  color: #bc65ff; 
+}
+
+h3{
+  text-align: left;
+  padding-left: 50px;
+}
+
+/* input {
+   background-color: white;
+   color: black;
+   border: 2px solid #555555;
+   border-radius: 4px;
+   display: inline-block;
+
+ } */
+ /* ::file-selector-button {
+   display: none;
+ } */
+
+ #search {
+   display: block;
+   visibility: hidden;
+   width: 0;
+   height: 0;
+   font-family: akkurat;
+ }
+
+ #download_btn_1, #download_btn_2, #up_btn{
+   color: #bc65ff;
+   background: #fff;
+   border: 1px solid #bc65ff;
+   font-size: 17px;
+   padding: 7px 12px;
+   font-weight: normal;
+   margin-right: 17px;
+   display: inline-block;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   min-width: 120px;
+   margin-left: 15px;
+   font-family: akkurat;
+ }
+
+ #upload_btn{
+  color: #c88cf581;
+  background: #fff;
+  border: 1px solid #c88cf581;
+  font-size: 17px;
+  padding: 7px 12px;
+  font-weight: normal;
+  margin-right: 17px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 120px;
+  margin-left: 15px;
+  font-family: akkurat;
+ }
+
+ #download_btn_2{
+  margin-top: 10px;
+ }
+
+ 
+ #download_btn_1:hover, #download_btn_2:hover, #up_btn:hover {
+   color:#fff;
+   background:#bc65ff;
+ }
+ 
+ #gear:hover {
+   background-color: #c8addd40; /*ececec;*/
+   /* color: white; */
+   transform: rotate(360deg);
+ }
+
+div{
+   text-align: center; 
+}
+
+#gear{
+   border: 2px solid rgb(255, 255, 255);
+   border-radius: 70px;
+   padding: 10px;
+   font-size: 40px;
+}
+
+#logo_button{
+   height: 165px;
+   width: 200px;
+   border-color: white;
+   margin-top: 160px;
+}
+
+#logo_button_2{
+  height: 165px;
+   width: 200px;
+   border-color: white;
+   margin-top: 10px;
+}
+
+th, td {
+   padding: 15px;
+   text-align: center;
+ }
+
+ table, th, td{
+   border: 1px solid black;
+   border-collapse: collapse;
+ }
+
+ #config_div{
+   text-align: right;
+   margin-right: 75px;
+ }
+
+#btn_div{
+   justify-content: center;
+}
+
+#t{
+  color: #bc65ff;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(50, 50, 50, 0.8);
+  width :100vw;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  width : 20vw;
+  height: 8vh;
+  border-radius: 5px;
+  top: 47%;
+  left: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+

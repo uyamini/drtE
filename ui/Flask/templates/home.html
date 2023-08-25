@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>drtE</title>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- 
+<script>
+    $('#up_btn').click(function(){
+    $('#search').click();
+});
+</script> -->
+
+<script>
+    $(document).ready(
+    function(){
+        $('input:file').change(
+            function(){
+                if ($(this).val()) {
+                    $('input:submit').attr('disabled',false); 
+                    $('input:submit').css("border", "1px solid #bc65ff");
+                    $('input:submit').css("color", "#bc65ff");
+                    $('input:submit').mouseover(function(){
+                        $(this).css("background-color", "#bc65ff");
+                        $(this).css("color", "white");
+                        
+                    }).mouseout(function(){
+                        $(this).css("background-color", "white");
+                        $(this).css("color", "#bc65ff");
+                    });
+                    // $("#t").html("File Upload Complete!");
+                } 
+            }
+            );
+    });
+</script>
+
+    </head>
+    <body>
+
+        <div id="config_div">
+            <form method="GET" action="/config">
+                <input type="image" id="gear" src="../static/gear_prple.png" ></input>
+            </form>
+        </div>
+    <div>
+        <img src="static/drte2.png">
+        <br>
+        <br>
+        <!-- <p> Click on the button below to upload your dataset and begin cleaning!</p> -->
+        <br>
+        <div id="btn_div">
+            <form method=post enctype=multipart/form-data>
+                <input id = "search" type=file name=file /> 
+                <input type="button" value="Upload File" id="up_btn" onclick="document.getElementById('search').click()"/>
+                <input id = "upload_btn" onclick='showPostDetail()' type=submit value="Start cleaning" disabled/>
+                <div id="modal-container">
+                    
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+        <div id="t" style="margin-top:20px; ">
+
+        </div>
+    </body>
+</html>

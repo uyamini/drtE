@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Config Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='configstyles.css') }}">
+  </head>
+  <body>
+    <form method="post">
+
+      <fieldset>
+        <legend>How do you want to clean ?</legend>
+        
+        <table>
+          <tr>
+            <td>
+              <h6>Cleaning Categories</h6>
+            </td>
+            <td>
+              <h6 style="margin-left: 50px;">Excel Legend</h6> 
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <input type="checkbox" id="checkNA" name="source" value="checkNA" checked>
+              <label for="checkNA">Standardize NA Cells </label>
+            </td>
+            <td>
+              
+              <div class="square1"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="IsIncorrectDataType" name="source" value="IsIncorrectDataType" checked> 
+          <label for="IsIncorrectDataType">Check for Data Type Mismatches</label>
+            </td>
+            <td>
+              
+              <div class="square2"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="MissingData" name="source" value="MissingData" unchecked>
+          <label for="MissingData">Impute Missing Data </label>
+            </td>
+            <td>
+              
+              <div class="square3"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="NumOutlier" name="source" value="NumOutlier" checked>
+              <label for="NumOutlier">Correct Numerical Outliers </div></label>
+            </td>
+            <td>
+              
+              <div class="square4"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="WrongCategory" name="source" value="WrongCategory" checked>
+          <label for="WrongCategory">Check for the Wrong Category </label>
+            </td>
+            <td>
+              
+              <div class="square5"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="typo" name="source" value="typo" checked>
+          <label for="typo">Correct Typos </label>
+            </td>
+            <td>
+              
+              <div class="square6"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="EmailChecking" name="source" value="EmailChecking" checked>
+            <label for="EmailChecking">Check for Email Consistency </label>
+            </td>
+            <td>
+              
+              <div class="square7"></div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="DuplicateRows" name="source" value="DuplicateRows" checked>
+              <label for="DuplicateRows">Remove Duplicate Rows </label>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <input type="checkbox" id="DuplicateColumns" name="source" value="DuplicateColumns" checked>
+              <label for="DuplicateColumns">Remove Duplicate Columns </label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="RedundantColumns" name="source" value="RedundantColumns" unchecked>
+              <label for="RedundantColumns">Remove Redundant Columns </label>
+            </td>
+          </tr>
+
+        </table>
+
+
+      </div>
+        <div id="submit_div">
+          <!-- <button type="submit" >Submit form</button> -->
+            <form method="GET" action="/home">
+                <input type="submit" value = Submit>
+            </form>
+        </div>
+        </fieldset>
+
+      
+      </form>
+  </body>
+</html>
